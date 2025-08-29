@@ -19376,7 +19376,7 @@ bc.Asc.c_oAscDateTimeFormat = bc.Asc.ZYb = xf;
   };
   n.prototype.init = n.prototype.Pe;
   var Wt = new n();
-  a.prototype.vN = "../../../../sdkjs/common/Images/cursors/";
+  a.prototype.vN = "https://cdn.kongfandong.cn/sdkjs/common/Images/cursors/";
   a.prototype.Ug = function () {
     return this.default;
   };
@@ -24129,12 +24129,12 @@ bc.Asc.c_oAscDateTimeFormat = bc.Asc.ZYb = xf;
     if (t.AscNotLoadAllScript) {
       o();
     } else {
-      tt("./../../../../sdkjs/" + e + "/sdk-all.js", o, s);
+      tt("https://cdn.kongfandong.cn/sdkjs/" + e + "/sdk-all.js", o, s);
     }
   };
   t.AscCommon.YKg = tt;
   t.AscCommon.WKg = function (t, e) {
-    tt("../../../../sdkjs/common/Charts/ChartStyles.js", t, e);
+    tt("https://cdn.kongfandong.cn/sdkjs/common/Charts/ChartStyles.js", t, e);
   };
   t.AscCommon.$Kg = function (e, o) {
     if (!t.NATIVE_EDITOR_ENJINE) {
@@ -41134,8 +41134,8 @@ window.AscCommon.od = new jh();
     this.w7a = false;
     this.DocumentType = 1;
     this.$lc = true;
-    t.AscViewer.baseUrl = e !== undefined && e.currentScript ? "" : "./../../../../sdkjs/pdf/src/engine/";
-    t.AscViewer.baseEngineUrl = "./../../../../sdkjs/pdf/src/engine/";
+    t.AscViewer.baseUrl = e !== undefined && e.currentScript ? "" : "https://cdn.kongfandong.cn/sdkjs/pdf/src/engine/";
+    t.AscViewer.baseEngineUrl = "https://cdn.kongfandong.cn/sdkjs/pdf/src/engine/";
     var s = this;
     this.ma.Nb.nj = new AscCommon.O9g(this.hQb, this);
     var c = this.ma.Nb.nj;
