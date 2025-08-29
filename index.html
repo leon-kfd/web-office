@@ -3,14 +3,104 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta http-equiv="Access-Control-Allow-Origin" content="*" />
     <link href="/img/64.png" rel="shortcut icon" />
     <title></title>
     <script src="/web-apps/apps/api/documents/api.js"></script>
+    <style>
+      .page-wrapper {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+      }
+      .asider-wrapper {
+        width: 92px;
+        height: 100%;
+        box-shadow:  0 0 8px #ccc;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 0;
+      }
+      .logo {
+        width: 64px;
+        height: 64px;
+        background: linear-gradient(135deg, #1890ff, #096dd9);
+        border-radius: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-weight: bold;
+        font-size: 32px;
+      }
+      .logo-text {
+        font-size: 18px;
+        font-weight: bold;
+        margin-top: 12px;
+      }
+      .file-wrapper {
+        margin-top: 88px;
+        display: flex;
+        flex-direction: column;
+      }
+      .file-wrapper .new-item {
+        padding: 12px;
+        border-radius: 6px;
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .file-wrapper .new-item:hover {
+        background: rgba(0,0,0,0.04);
+      }
+      .file-wrapper .new-item img {
+        width: 52px;
+        height: auto;
+      }
+      .file-wrapper .new-item .text {
+        font-size: 14px;
+        margin-top: 8px;
+        text-align: center;
+        font-weight: bold;
+      }
+      #app {
+        width: 100%;
+        flex: 1;
+        height: 100%;
+      }
+    </style>
   </head>
 
   <body>
-    <div id="app" class="w-full h-full">
-      <div id="iframe"></div>
+    <div class="page-wrapper">
+      <div class="asider-wrapper">
+        <div class="logo">W</div>
+        <div class="logo-text">OFFICE</div>
+
+        <div class="file-wrapper">
+          <div class="new-item" style="margin-bottom: 24px" id="openDoc">
+            <img src="/img/64.png" alt="">
+            <div class="text">Open</div>
+          </div>
+          <div class="new-item word-wrapper" id="newWord">
+            <img src="/img/doc-formats/docx.png" alt="">
+            <div class="text">Word</div>
+          </div>
+          <div class="new-item excel-wrapper" id="newExcel">
+            <img src="/img/doc-formats/xlsx.png" alt="">
+            <div class="text">Excel</div>
+          </div>
+          <div class="new-item ppt-wrapper" id="newPPT">
+            <img src="/img/doc-formats/pptx.png" alt="">
+            <div class="text">PPT</div>
+          </div>
+        </div>
+      </div>
+      <div id="app">
+        <div id="iframe"></div>
+      </div>
     </div>
   </body>
   <script type="module" src="./index.ts"></script>

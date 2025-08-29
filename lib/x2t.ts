@@ -81,7 +81,9 @@ class X2TConverter {
   };
 
   private readonly WORKING_DIRS = ['/working', '/working/media', '/working/fonts', '/working/themes'];
-  private readonly SCRIPT_PATH = '/document/wasm/x2t/x2t.js';
+  // private readonly SCRIPT_PATH = '/office/wasm/x2t/x2t.js';
+  // private readonly SCRIPT_PATH = 'https://raw.githubusercontent.com/leon-kfd/web-office/refs/heads/main/public/wasm/x2t/x2t.js';
+  private readonly SCRIPT_PATH = import.meta.env.PROD ? 'https://cdn.kongfandong.cn/wasm/x2t/x2t.js' : '/office/wasm/x2t/x2t.js'
   private readonly INIT_TIMEOUT = 300000;
 
   /**

@@ -7,8 +7,11 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 export default defineConfig({
-  base: '/document',
+  base: '/office',
   publicDir: 'public',
+  server: {
+    allowedHosts: ['test.kongfandong.cn']
+  },
   resolve: {
     alias: {
       '@/lib': resolve(__dirname, 'lib'),
